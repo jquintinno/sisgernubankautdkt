@@ -1,0 +1,23 @@
+.progresso {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progresso::before {
+    content: "";
+    background-color: var(--app-background);
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.progresso-valor {
+    position: relative;
+    color: white;
+}

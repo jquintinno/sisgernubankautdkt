@@ -1,0 +1,51 @@
+img {
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+    transform: translateY(30px);
+    animation: animacaoA 1s cubic-bezier(1, 1, 1, 1) forwards;
+}
+
+form {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+    opacity: 0;
+    animation: apresentarFormulario 0.5s 1.5s linear forwards;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    input {
+        width: 170px;
+        height: 30px;
+        border: solid #a12fed 4px;
+        border-radius: 10px;
+        background: var(--app-background);
+        margin: 4px;
+        color: white;
+    }
+    input:hover {
+        border: solid #a12fed 4px;
+    }
+    ::placeholder {
+        color: white;
+        margin-left: 10px;
+    }
+}
+
+@keyframes animacaoA {
+    100% {
+        transform: translateY(-60px);
+    }
+}
+
+
+@keyframes apresentarFormulario {
+    100% {
+        opacity: 1;
+    }
+}
